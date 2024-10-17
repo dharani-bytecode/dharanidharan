@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px; /* Increased font size */
+  background: linear-gradient(to right, #000428, #004e92); /* Blue and black gradient */
+  color: #f1f1f1; /* Default text color */
+}
+
+/* Background animation styles */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-animation div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  animation: move 15s linear infinite;
+}
+
+@keyframes move {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(100vw, 100vh); }
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+.logo img {
+  max-width: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+/* Container styles */
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+
+/* Slideshow styles */
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%; /* Ensures images fit the container */
+  height: 300px; /* Set a specific height for uniformity */
+}
+
+/* Info section styles */
+.info-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.info-section h2 {
+  color: red; /* Red color for headings */
+  font-weight: bold; /* Bold font */
+  font-size: 24px; /* Larger heading size */
+}
+
+.about-image {
+  width: 200px; /* Adjust the image size */
+  border-radius: 50%;
+}
+
+.hire-me {
+  background-color: yellow; /* Yellow background for button */
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px; /* Increased button font size */
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Project styles */
+.project {
+  margin: 20px 0;
+}
+
+.project img {
+  width: 150px; /* Reduced image size for projects */
+  height: 150px; /* Set uniform height */
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.8);
+}
