@@ -1,138 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="background-animation">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    <header>
-        <div class="logo">
-            <img src="https://tse1.mm.bing.net/th/id/OIP.oRDdIRrfBl9uldsHbdVJngHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Logo">
-            <h1>Software Engineer Portfolio</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px; /* Increased font size */
+  background: linear-gradient(to right, #000428, #004e92); /* Blue and black gradient */
+  color: #f1f1f1; /* Default text color */
+}
 
-    <div class="container">
-        <section id="home">
-            <div class="slideshow-container">
-                <div class="slide fade">
-                    <img src="https://tse1.mm.bing.net/th/id/OIP.2xCM5iDrkyCFWRegyclU9AHaEK?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Project 1">
-                    <div class="text">Project 1: Scratch Project</div>
-                </div>
-                <div class="slide fade">
-                    <img src="https://tse3.mm.bing.net/th/id/OIP.EnuVZpIztW0mZWeHFWd1_QHaD4?w=330&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Car Game">
-                    <div class="text">Project 2: Car Game</div>
-                </div>
-                <div class="slide fade">
-                    <img src="https://tse3.mm.bing.net/th/id/OIP.z2m8t-gmutQT5W901Ldb0wHaEK?w=260&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Travel Guide Website">
-                    <div class="text">Project 3: Travel Guide Website</div>
-                </div>
-            </div>
-        </section>
+/* Background animation styles */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
 
-        <section id="about" class="info-section">
-            <h2>About Me</h2>
-            <img src="dharani.png" class="about-image">
-            <p>
-                Hello! I’m Dharnidharan L, a passionate second-year Computer Science student with a strong interest in exploring new technologies and building creative web development projects. I am currently enhancing my skills in C, C++, Java, and web development, focusing on creating dynamic, user-friendly applications. I am driven by a love for problem-solving, innovation, and continuous learning.
-            </p>
-            <button class="hire-me">Hire Me</button>
-        </section>
+.background-animation div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  animation: move 15s linear infinite;
+}
 
-        <section id="skills" class="info-section">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>➤ Programming Languages: C, C++, Java</li>
-                <li>➤ Web Development: HTML, CSS, JavaScript</li>
-            </ul>
-        </section>
+@keyframes move {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(100vw, 100vh); }
+}
 
-        <section id="projects" class="info-section">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="https://tse1.mm.bing.net/th/id/OIP.2xCM5iDrkyCFWRegyclU9AHaEK?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Scratch Project">
-                <h3 style="text-align:center;">Project 1: Scratch Project</h3>
-                <ul>
-                    <li>➤ Created an interactive scratch project.</li>
-                </ul>
-            </div>
-            <div class="project">
-                <img src="https://tse3.mm.bing.net/th/id/OIP.EnuVZpIztW0mZWeHFWd1_QHaD4?w=330&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Car Game">
-                <h3 style="text-align:center;">Project 2: Car Game</h3>
-                <ul>
-                    <li>➤ Developed a car racing game.</li>
-                </ul>
-            </div>
-            <div class="project">
-                <img src="https://tse3.mm.bing.net/th/id/OIP.z2m8t-gmutQT5W901Ldb0wHaEK?w=260&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Travel Guide Website">
-                <h3 style="text-align:center;">Project 3: Travel Guide Website</h3>
-                <ul>
-                    <li>➤ Developed a travel guide website.</li>
-                </ul>
-            </div>
-        </section>
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.8);
+}
 
-        <section id="certificates" class="info-section">
-            <h2>Certificates</h2>
-            <ul>
-                <li>➤ Certified C Developer</li>
-                <li>➤ Certified C++ Developer</li>
-                <li>➤ UI/UX Designer Certification</li>
-                <li>➤ HTML Certification</li>
-            </ul>
-        </section>
+.logo img {
+  max-width: 50px;
+}
 
-        <section id="contact" class="info-section">
-            <h2>Contact Us</h2>
-            <p>If you would like to get in touch, please feel free to contact me via the following:</p>
-            <ul>
-                <li>➤ 📞 Phone: 8695283442</li>
-                <li>➤ ✉️ Email: <a href="mailto:dharandharani814@gmail.com">dharandharani814@gmail.com</a></li>
-                <li>➤ 🔗 LinkedIn: Your LinkedIn</li>
-                <li>➤ 🔗 GitHub: Your GitHub</li>
-                <li>➤ 🔗 Instagram: Your Instagram</li>
-            </ul>
-        </section>
-    </div>
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
 
-    <button class="open-chatbox-btn">Chat with AI</button>
+nav ul li {
+  margin: 0 15px;
+}
 
-    <div class="chatbox" style="display: none;">
-        <div class="chatbox-header">
-            <span>AI Chatbox</span>
-            <button class="close-chatbox">X</button>
-        </div>
-        <div class="messages"></div>
-        <div class="chat-input-container">
-            <input type="text" id="user-input" placeholder="Ask me anything..." />
-            <button id="send-btn">Send</button>
-        </div>
-    </div>
+nav ul li a {
+  color: #ffcc00;
+  text-decoration: none;
+}
 
-    <footer>
-        <p>© 2024 Dharnidharan L. All rights reserved.</p>
-    </footer>
+/* Container styles */
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+/* Slideshow styles */
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%; /* Ensures images fit the container */
+  height: 300px; /* Set a specific height for uniformity */
+}
+
+/* Info section styles */
+.info-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.info-section h2 {
+  color: red; /* Red color for headings */
+  font-weight: bold; /* Bold font */
+  font-size: 24px; /* Larger heading size */
+}
+
+.about-image {
+  width: 200px; /* Adjust the image size */
+  border-radius: 50%;
+}
+
+.hire-me {
+  background-color: yellow; /* Yellow background for button */
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px; /* Increased button font size */
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Project styles */
+.project {
+  margin: 20px 0;
+}
+
+.project img {
+  width: 150px; /* Reduced image size for projects */
+  height: 150px; /* Set uniform height */
+}
+
+/* Chatbox styles */
+.chatbox {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffcc00;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.messages {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    color: white;
+    flex-grow: 1;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 5px;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#send-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+}
