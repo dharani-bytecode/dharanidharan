@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    background: url('your-background-image-url.jpg') repeat; /* Set your image URL */
+    background: url('giphy.jpg') repeat; /* Set your image URL */
     background-size: cover; /* Cover the entire viewport */
     animation: moveBackground 10s linear infinite; /* Animation for moving background */
     color: black; /* Set default text color to black */
