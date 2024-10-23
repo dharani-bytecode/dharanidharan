@@ -6,12 +6,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 18px; /* Increased font size */
-  background: linear-gradient(to right, #000428, #004e92); /* Blue and black gradient */
-  color: #f1f1f1; /* Default text color */
+  font-size: 18px;
+  background: linear-gradient(to right, #000428, #004e92);
+  color: #f1f1f1;
 }
 
-/* Background animation styles */
 .background-animation {
   position: absolute;
   top: 0;
@@ -35,7 +34,6 @@ body {
   100% { transform: translate(100vw, 100vh); }
 }
 
-/* Header styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -54,134 +52,109 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
-  color: #ffcc00;
+  color: #f1f1f1;
   text-decoration: none;
 }
 
-/* Container styles */
 .container {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px; /* Add padding for spacing */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+  padding: 20px;
 }
 
-/* Slideshow styles */
+.info-section {
+  margin: 40px 0;
+}
+
+.info-section h2 {
+  margin-bottom: 20px;
+}
+
+.project img {
+  max-width: 100%;
+}
+
 .slideshow-container {
   position: relative;
-  max-width: 800px;
+  max-width: 100%;
   margin: auto;
-  border-radius: 10px;
   overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
 }
 
 .slide {
   display: none;
 }
 
-.slide img {
-  width: 100%; /* Ensures images fit the container */
-  height: 300px; /* Set a specific height for uniformity */
-}
-
-/* Info section styles */
-.info-section {
-  padding: 40px;
+.text {
+  color: #f2f2f2;
+  font-size: 24px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
 }
 
-.info-section h2 {
-  color: red; /* Red color for headings */
-  font-weight: bold; /* Bold font */
-  font-size: 24px; /* Larger heading size */
-}
-
-.about-image {
-  width: 200px; /* Adjust the image size */
-  border-radius: 50%;
-}
-
-.hire-me {
-  background-color: yellow; /* Yellow background for button */
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px; /* Increased button font size */
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-/* Project styles */
-.project {
-  margin: 20px 0;
-}
-
-.project img {
-  width: 150px; /* Reduced image size for projects */
-  height: 150px; /* Set uniform height */
-}
-
-/* Chatbox styles */
 .chatbox {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 300px;
-    background-color: #2b2b2b;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .chatbox-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #ffcc00;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: black;
-    font-weight: bold;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatbox-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
 }
 
 .messages {
-    padding: 10px;
-    height: 200px;
-    overflow-y: auto;
-    background-color: #1e1e1e;
-    color: white;
-    flex-grow: 1;
+  padding: 20px;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 .chat-input-container {
-    display: flex;
-    padding: 5px;
+  padding: 10px;
+  display: flex;
 }
 
-#user-input {
-    flex-grow: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+.chat-input-container input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-#send-btn {
-    background-color: #ffcc00;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 5px;
+.chat-input-container button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Footer styles */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(51, 51, 51, 0.8);
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
 }
