@@ -6,19 +6,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 18px;
   background: linear-gradient(to right, #000428, #004e92);
   color: #f1f1f1;
-}
-
-.background-animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
+  font-size: 18px;
 }
 
 .background-animation div {
@@ -78,83 +68,31 @@ nav ul li a {
 
 .slideshow-container {
   position: relative;
-  max-width: 100%;
+  max-width: 80%; /* Reduced the width of the slideshow */
   margin: auto;
   overflow: hidden;
-}
-
-.slide img {
-  width: 100%;
 }
 
 .slide {
   display: none;
 }
 
+.slide img {
+  width: 80%; /* Adjust the width of the images */
+  margin: auto;
+}
+
 .text {
   color: #f2f2f2;
-  font-size: 24px;
+  font-size: 20px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
 }
 
-.chatbox {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-}
-
-.chatbox-header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.chatbox-header button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 16px;
-}
-
-.messages {
-  padding: 20px;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.chat-input-container {
-  padding: 10px;
-  display: flex;
-}
-
-.chat-input-container input {
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.chat-input-container button {
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.8);
 }
