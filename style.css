@@ -63,6 +63,7 @@ nav ul li a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     max-width: 800px; /* Optional: Limit the width of sections */
     width: 100%;
+    color: black; /* Change font color to black */
 }
 
 .project img {
