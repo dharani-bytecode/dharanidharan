@@ -7,20 +7,9 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    background: url('your-gif-url.gif') no-repeat center center fixed; /* Add your GIF URL here */
+    background: url('your-gif-url.gif') no-repeat center center fixed; /* Add your plain GIF URL here */
     background-size: cover; /* Cover the entire background */
     color: #f1f1f1;
-}
-
-/* Background animation styles */
-.background-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
 }
 
 /* Header styles */
@@ -52,11 +41,11 @@ nav ul li a {
 
 /* Container styles */
 .container {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px; /* Added margin for spacing */
+    margin: 20px; /* Margin for spacing */
 }
 
 /* Slideshow styles */
