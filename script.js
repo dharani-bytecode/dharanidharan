@@ -1,21 +1,13 @@
-let slideIndex = 0; // Initialize slide index
-showSlides(); // Call the function to show slides
+let slideIndex = 0;
+showSlides();
 
 function showSlides() {
-    let slides = document.getElementsByClassName("slide"); // Get all slides
-
-    // Hide all slides
+    let slides = document.getElementsByClassName("mySlides");
     for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+        slides[i].style.display = "none";
     }
-    
-    slideIndex++; // Increment slide index
-
-    // Reset to the first slide if it's beyond the last one
-    if (slideIndex >= slides.length) {
-        slideIndex = 0; 
-    }
-
-    slides[slideIndex].style.display = "block"; // Show the current slide
-    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
