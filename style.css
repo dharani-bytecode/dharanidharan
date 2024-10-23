@@ -56,14 +56,14 @@ nav ul li a {
 }
 
 .info-section {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: red; /* Change background color to red */
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     max-width: 800px; /* Optional: Limit the width of sections */
     width: 100%;
-    color: black; /* Change font color to black */
+    color: black; /* Change text color to black */
 }
 
 .project img {
@@ -92,7 +92,7 @@ nav ul li a {
 }
 
 .info-section h2 {
-    color: red;
+    color: red; /* Heading color remains red */
     font-weight: bold;
     font-size: 24px;
 }
