@@ -27,50 +27,129 @@
     </header>
 
     <div class="container">
-        <!-- Rest of the website content -->
+        <section id="home">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="https://codakid.com/wp-content/uploads/2023/01/image2.png" alt="Project 1">
+                    <div class="text" style="text-align: center;">Project 1: Scratch Project</div>
+                </div>
+                <div class="slide fade">
+                    <img src="https://th.bing.com/th/id/OIP.aXb8F0S9pGM3zTL6GxQyfgHaD4?rs=1&pid=ImgDetMain" alt="Car Game">
+                    <div class="text" style="text-align: center;">Project 2: Car Game</div>
+                </div>
+                <div class="slide fade">
+                    <img src="https://th.bing.com/th/id/OIP._94cH4txw7Gp7g0n8Qr6dQHaEK?w=300&h=180&c=7&r=0&o=5&pid=1.7" alt="Travel Guide Website">
+                    <div class="text" style="text-align: center;">Project 3: Travel Guide Website</div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Chatbox AI -->
-        <div class="chatbox" id="chatbox">
-            <div class="chatbox-header">
-                <h2>Ask Me Anything!</h2>
+        <section id="about" class="info-section">
+            <h2>About Me</h2>
+            <img src="dharani.png" alt="Your Image" class="about-image">
+            <p>
+                Hello! I’m Dharnidharan L, a passionate second-year Computer Science student with a strong interest in exploring new technologies
+                and building creative web development projects. I am currently enhancing my skills in C, C++, Java, and web development,
+                focusing on creating dynamic, user-friendly applications. I am driven by a love for problem-solving, innovation, and continuous learning.
+            </p>
+            <button class="hire-me">Hire Me</button>
+        </section>
+
+        <section id="skills" class="info-section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>➤ Programming Languages: C, C++, Java</li>
+                <li>➤ Web Development: HTML, CSS, JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="info-section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Scratch Project</h3>
+                <img src="https://codakid.com/wp-content/uploads/2023/01/image2.png" alt="Scratch Project">
+                <ul>
+                    <li>➤ Created an interactive scratch project.</li>
+                </ul>
             </div>
-            <div class="chatbox-body">
-                <div id="chatbox-messages"></div>
+            <div class="project">
+                <h3>Project 2: Car Game</h3>
+                <img src="https://th.bing.com/th/id/OIP.aXb8F0S9pGM3zTL6GxQyfgHaD4?rs=1&pid=ImgDetMain" alt="Car Game">
+                <ul>
+                    <li>➤ Developed a car racing game.</li>
+                </ul>
             </div>
-            <input type="text" id="chatbox-input" placeholder="Type a question..." />
-            <button onclick="handleUserInput()">Send</button>
-        </div>
+            <div class="project">
+                <h3>Project 3: Travel Guide Website</h3>
+                <img src="https://th.bing.com/th/id/OIP._94cH4txw7Gp7g0n8Qr6dQHaEK?w=300&h=180&c=7&r=0&o=5&pid=1.7" alt="Travel Guide Website">
+                <ul>
+                    <li>➤ Developed a travel guide website.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="certificates" class="info-section">
+            <h2>Certificates</h2>
+            <ul>
+                <li>➤ Certified C Developer</li>
+                <li>➤ Certified C++ Developer</li>
+                <li>➤ UI/UX Designer Certification</li>
+                <li>➤ HTML Certification</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="info-section">
+            <h2>Contact Us</h2>
+            <p>If you would like to get in touch, please feel free to contact me via the following:</p>
+            <ul>
+                <li>➤ 📞 Phone: 8695283442</li>
+                <li>➤ ✉️ Email: <a href="mailto:dharandharani814@gmail.com">dharandharani814@gmail.com</a></li>
+                <li>➤ 🔗 LinkedIn: Your LinkedIn</li>
+                <li>➤ 🔗 GitHub: Your GitHub</li>
+                <li>➤ 🔗 Instagram: Your Instagram</li>
+            </ul>
+        </section>
     </div>
 
     <footer>
         <p>© 2024 Dharnidharan L. All rights reserved.</p>
     </footer>
 
+    <!-- Chatbox -->
+    <div class="chatbox">
+        <div class="chatbox-header">
+            <h3>Chat with Us</h3>
+            <button id="chat-close-btn">X</button>
+        </div>
+        <div class="chatbox-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type your message...">
+        <button id="chat-send-btn">Send</button>
+    </div>
+
     <!-- Slideshow script -->
     <script src="script.js"></script>
-    <!-- Chatbox AI script -->
+
+    <!-- Chatbox script -->
     <script>
-        const responses = {
-            "home": "This is the home section where you can view a slideshow of my recent projects.",
-            "about": "I’m Dharnidharan L, a second-year Computer Science student with a passion for web development.",
-            "skills": "I have technical skills in C, C++, Java, HTML, CSS, and JavaScript.",
-            "projects": "You can find my projects such as the Scratch Project, Car Game, and Travel Guide Website.",
-            "certificates": "I have certifications in C, C++, UI/UX design, and HTML.",
-            "contact": "You can contact me via phone at 8695283442 or email me at dharandharani814@gmail.com.",
-            "default": "Sorry, I couldn't understand that. Please ask about Home, About Me, Skills, Projects, Certificates, or Contact."
-        };
+        const chatbox = document.querySelector('.chatbox');
+        const closeBtn = document.getElementById('chat-close-btn');
+        const chatInput = document.getElementById('chat-input');
+        const chatMessages = document.querySelector('.chatbox-messages');
+        const sendBtn = document.getElementById('chat-send-btn');
 
-        function handleUserInput() {
-            const input = document.getElementById("chatbox-input").value.toLowerCase();
-            const chatboxMessages = document.getElementById("chatbox-messages");
+        closeBtn.addEventListener('click', () => {
+            chatbox.style.display = 'none'; // Close chatbox
+        });
 
-            let response = responses[input] || responses["default"];
-            chatboxMessages.innerHTML += `<div><b>You:</b> ${input}</div>`;
-            chatboxMessages.innerHTML += `<div><b>AI:</b> ${response}</div>`;
-
-            document.getElementById("chatbox-input").value = ""; // Clear input
-            chatboxMessages.scrollTop = chatboxMessages.scrollHeight; // Scroll to bottom
-        }
+        sendBtn.addEventListener('click', () => {
+            const message = chatInput.value.trim();
+            if (message) {
+                const messageDiv = document.createElement('div');
+                messageDiv.textContent = message;
+                chatMessages.appendChild(messageDiv); // Add message to chatbox
+                chatInput.value = ''; // Clear input field
+            }
+        });
     </script>
 </body>
 </html>
