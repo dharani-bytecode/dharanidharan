@@ -7,8 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    background: linear-gradient(to right, #000428, #004e92);
-    color: #f1f1f1;
+    background-color: blue; /* Change background to blue */
+    color: black; /* Set default text color to black */
     text-align: center; /* Center all text content */
 }
 
@@ -44,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffcc00;
+    color: #ffcc00; /* Keep navigation link color */
     text-decoration: none;
 }
 
@@ -56,14 +56,14 @@ nav ul li a {
 }
 
 .info-section {
-    background-color: red; /* Change background color to red */
+    background-color: rgba(255, 255, 255, 0.1); /* Keep the background semi-transparent */
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     max-width: 800px; /* Optional: Limit the width of sections */
     width: 100%;
-    color: black; /* Change text color to black */
+    color: black; /* Ensure text color is black */
 }
 
 .project img {
