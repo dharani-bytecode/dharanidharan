@@ -115,41 +115,7 @@
         <p>© 2024 Dharnidharan L. All rights reserved.</p>
     </footer>
 
-    <!-- Chatbox -->
-    <div class="chatbox">
-        <div class="chatbox-header">
-            <h3>Chat with Us</h3>
-            <button id="chat-close-btn">X</button>
-        </div>
-        <div class="chatbox-messages"></div>
-        <input type="text" id="chat-input" placeholder="Type your message...">
-        <button id="chat-send-btn">Send</button>
-    </div>
-
     <!-- Slideshow script -->
     <script src="script.js"></script>
-
-    <!-- Chatbox script -->
-    <script>
-        const chatbox = document.querySelector('.chatbox');
-        const closeBtn = document.getElementById('chat-close-btn');
-        const chatInput = document.getElementById('chat-input');
-        const chatMessages = document.querySelector('.chatbox-messages');
-        const sendBtn = document.getElementById('chat-send-btn');
-
-        closeBtn.addEventListener('click', () => {
-            chatbox.style.display = 'none'; // Close chatbox
-        });
-
-        sendBtn.addEventListener('click', () => {
-            const message = chatInput.value.trim();
-            if (message) {
-                const messageDiv = document.createElement('div');
-                messageDiv.textContent = message;
-                chatMessages.appendChild(messageDiv); // Add message to chatbox
-                chatInput.value = ''; // Clear input field
-            }
-        });
-    </script>
 </body>
 </html>
